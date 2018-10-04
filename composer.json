@@ -1,0 +1,40 @@
+{
+    "name": "devmobgroup/postcodes",
+    "description": "Abstraction layer for fetching Dutch postcode data.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeffrey Angenent",
+            "email": "jeffrey.angenent@devmob.com"
+        },
+        {
+            "name": "Maarten Paauw",
+            "email": "maartenpaauw@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "~6.0",
+        "psr/http-message": "^1.0",
+        "adbario/php-dot-notation": "^2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    },
+    "suggest": {
+        "devmobgroup/postcodes-api-postcode": "Provider for Api-postcode.nl",
+        "devmobgroup/postcodes-postcode-api-nu": "Provider for PostcodeAPI.nu"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevMob\\Postcodes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DevMob\\Postcodes\\Tests\\": "tests/"
+        }
+    }
+}
