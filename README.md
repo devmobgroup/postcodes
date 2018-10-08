@@ -16,7 +16,7 @@ This package provides some basic functionality that can be implemented for speci
 You can find all of our own provider implementations [in this repository](https://github.com/devmobgroup/postcodes-providers).
     
     - **PostcodeAPI.nu** (recommended)
-        [postcodeapi.nu](https:///postcodeapi.nu)
+        [postcodeapi.nu](https://www.postcodeapi.nu)
         ```
         composer require devmobgroup/postcodes-postcode-api-nu
         ```
