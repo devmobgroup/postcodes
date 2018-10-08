@@ -16,7 +16,7 @@ This package provides some basic functionality that can be implemented for speci
 You can find all of our own provider implementations [in this repository](https://github.com/devmobgroup/postcodes-providers).
     
     - **PostcodeAPI.nu** (recommended)
-        [postcodeapi.nu](https:///postcodeapi.nu)
+        [postcodeapi.nu](https://www.postcodeapi.nu)
         ```
         composer require devmobgroup/postcodes-postcode-api-nu
         ```
@@ -36,8 +36,9 @@ which has a lookup method:
 $provider->lookup(string $postcode, string $number);
 ```
 
-This method returns an **array** of [`Address`]() instances. This array should never be empty, because instead the
-`NoSuchCombinationException` exception indicates no results were found.
+This method returns an **array** of [`Address`](https://github.com/devmobgroup/postcodes/blob/master/src/Address/Address.php) 
+instances. This array should never be empty, because instead the `NoSuchCombinationException` exception indicates no 
+results were found.
 ```php
 $address = $addresses[0];
 
