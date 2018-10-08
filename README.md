@@ -36,8 +36,9 @@ which has a lookup method:
 $provider->lookup(string $postcode, string $number);
 ```
 
-This method returns an **array** of [`Address`]() instances. This array should never be empty, because instead the
-`NoSuchCombinationException` exception indicates no results were found.
+This method returns an **array** of [`Address`](https://github.com/devmobgroup/postcodes/blob/master/src/Address/Address.php) 
+instances. This array should never be empty, because instead the `NoSuchCombinationException` exception indicates no 
+results were found.
 ```php
 $address = $addresses[0];
 
