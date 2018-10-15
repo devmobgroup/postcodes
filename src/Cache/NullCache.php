@@ -4,6 +4,10 @@ namespace DevMob\Postcodes\Cache;
 
 use Psr\SimpleCache\CacheInterface;
 
+/**
+ * This class is based on the Null Object Pattern.
+ * This will reduce if statements where this code will be implemented.
+ */
 class NullCache implements CacheInterface
 {
     /**
@@ -14,9 +18,10 @@ class NullCache implements CacheInterface
      * @return mixed The value of the item from the cache, or $default in case of cache miss.
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *   MUST be thrown if the $key string is not a legal value.
-     */public function get($key, $default = null)
+     */
+    public function get($key, $default = null)
     {
-        return null;
+        return $default;
     }
 
     /**
@@ -33,7 +38,7 @@ class NullCache implements CacheInterface
      */
     public function set($key, $value, $ttl = null)
     {
-        return false;
+        return true;
     }
 
     /**
@@ -46,7 +51,7 @@ class NullCache implements CacheInterface
      */
     public function delete($key)
     {
-        return false;
+        return true;
     }
 
     /**
@@ -56,7 +61,7 @@ class NullCache implements CacheInterface
      */
     public function clear()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -90,7 +95,7 @@ class NullCache implements CacheInterface
      */
     public function setMultiple($values, $ttl = null)
     {
-        return false;
+        return true;
     }
 
     /**
@@ -104,7 +109,7 @@ class NullCache implements CacheInterface
      */
     public function deleteMultiple($keys)
     {
-        return false;
+        return true;
     }
 
     /**
