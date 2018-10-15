@@ -6,7 +6,7 @@ use DevMob\Postcodes\Cache\NullCache;
 use DevMob\Postcodes\Providers\ProviderInterface;
 use Psr\SimpleCache\CacheInterface;
 
-class Address implements ProviderInterface
+class Postcodes implements ProviderInterface
 {
     /**
      * @var \DevMob\Postcodes\Providers\ProviderInterface
